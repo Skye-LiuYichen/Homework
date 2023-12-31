@@ -1,0 +1,5 @@
+<!--pages/camera/camera.wxml-->
+<camera class="camera" device_position="{{backFont ? 'back':'front'}}" flash="off" binderror="medium"></camera>
+<button type="primary" bindtap="takePhoto">拍照</button>
+<button type="default" bindtap="switchCamera">反转摄像头</button>
+<image mode="widthFix" src="{{src}}"></image>

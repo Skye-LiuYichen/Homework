@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<block>
+  <view class = "photo" wx:if="{{phType}}">
+    <image wx:for="{{imgList}}" wx:key="item"  src="{{item.tempFilePath}}" class="imgList" mode="widthFix"></image>
+  </view>
+  <view class = "photo" wx:else>
+     <image src='{{avatar}}'></image>
+  </view>
+</block>
+
+<view class="page-body">
+  <view class="btn-area" id="buttonContainer">
+    <button type="primary" bind:tap="bindToCamera">拍摄照片</button>
+    <button type="default" bind:tap="chooseImage">本地照片</button>
+    <button type="warn" bind:tap="uploadImage">上传照片</button>
+    <input placeholder='消息输入' bindinput="onMessageInput"></input>
+    <button type="primary" bindtap="sendMessage">发送</button>
+  </view>
+</view>

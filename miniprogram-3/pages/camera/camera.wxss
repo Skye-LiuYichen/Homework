@@ -1,0 +1,13 @@
+/* pages/camera/camera.wxss */
+page{
+  height:100%
+}
+.camera{
+  height:80%;
+  width:100%;
+}
+
+button{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}

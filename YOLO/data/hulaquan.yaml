@@ -1,0 +1,10 @@
+
+train: score/images/train  # train images (relative to 'path') 128 images
+val: score/images/train  # val images (relative to 'path') 128 images
+test:  score/images/test
+
+# Classes
+nc: 3  # number of classes
+names: ['cat','dog','fox']  # class names
+
+
